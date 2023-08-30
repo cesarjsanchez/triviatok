@@ -323,7 +323,20 @@ i.fa-heart{
 }
 .Element-heading-para{
     padding-right: 380px;
+    color: inherit;  
 }
+.Element-heading h3{
+    color: inherit;    /* This ensures the color doesn't change from the default or parent's color */
+}
+a.Element-link {
+    color: inherit;      /* This will ensure the link uses the parent's text color */
+    text-decoration: none;  /* This will remove the underline */
+}
+
+a.Element-link:hover {
+    text-decoration: none;  /* Optional: Underline on hover for a hint that it's clickable */
+}
+
 .call-btn-1{
     border:1px solid black;
     border-radius: 30px;
