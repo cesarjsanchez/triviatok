@@ -90,8 +90,8 @@ body {
     max-height: 10vh;
 }
 .wow-logo{
-    padding-bottom: 2vh;
-    padding-top:10vh;
+    padding-bottom: 1vh;
+    padding-top:1vh;
 }
 .img-logo{
     max-height: 15vh;
@@ -102,12 +102,11 @@ body {
     max-height: 5vh;
 }
 .head{
-    min-height: 100vh;
-    background-image: url('../img/Trivia-TokLogo.jpg');
+    min-height: 40vh;
     position: relative;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size:53vh;
+    background-size:50vh;
 }
 .fix-bottom{
     text-align: bottom;
@@ -152,7 +151,7 @@ body {
     margin-top: 30px;
 }
 .index-part-2,.index-part-4,.index-part-3{
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 60px;
 }
 .index-part-2,.index-part-4{
@@ -416,9 +415,9 @@ textarea{
     padding-top: 50px;
 }
 .wow-btn{
-     padding-top:4vh;
-     padding-bottom:2vh;
-}
+    padding-top:20px;
+    padding-bottom:20px;
+   }
 .foot-img{
     margin-right: auto;
     margin-left: auto;
@@ -509,14 +508,7 @@ textarea{
         padding-top: 15px;
         padding-bottom: 25px;
     }
-/*    .wow-logo{
-    padding-bottom: 10px;
-    padding-top: 40px;
-    }*/
-    .wow-btn{
-     padding-top:20px;
-     padding-bottom:5px;
-    }
+
     input,select,textarea{
     padding-top: 8px;
     padding-bottom: 8px;
@@ -554,6 +546,11 @@ textarea{
         padding: auto;
 
     }
+    .sub-text{
+        padding-right: 10%;
+        padding-left: 10%;
+        padding-bottom: 3%;   
+    }
     .generic{
     padding-top: 15px;
     }
@@ -587,8 +584,8 @@ textarea{
         max-height: 10vh;
     }
     .wow-logo{
-        padding-bottom: 2vh;
-        padding-top:10vh;
+        padding-bottom: 1vh;
+        padding-top:1vh;
     }
     .img-logo{
         max-height: 30vh;
@@ -605,10 +602,6 @@ textarea{
     .head{
         min-height: 150vh;
         background-size:60vh;
-    }
-        .wow-btn{
-         padding-top:10vh;
-         padding-bottom:4vh;
     }
     
 }
