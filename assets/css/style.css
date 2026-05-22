@@ -289,9 +289,12 @@ select {
   min-height: min(66vw, 560px);
   display: grid;
   place-items: center;
+  isolation: isolate;
 }
 
 .mark-orbit {
+  position: relative;
+  z-index: 1;
   width: min(100%, 470px);
   aspect-ratio: 1;
   display: grid;
@@ -304,13 +307,15 @@ select {
 }
 
 .mark-orbit img {
-  width: 67%;
+  width: 70%;
   filter: drop-shadow(0 16px 24px rgba(0, 0, 0, 0.22));
+  transform: translateY(-5%);
 }
 
 .waveform {
   position: absolute;
-  inset: auto 0 7% 0;
+  inset: auto 0 4% 0;
+  z-index: 3;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -326,36 +331,6 @@ select {
   background: linear-gradient(var(--yellow), var(--coral));
   animation: pulseBars 1250ms ease-in-out infinite;
   animation-delay: var(--d);
-}
-
-.ticker {
-  position: absolute;
-  right: 4%;
-  top: 11%;
-  width: min(220px, 44vw);
-  padding: 0.9rem 1rem;
-  color: var(--ink);
-  background: var(--paper);
-  border: 1px solid rgba(21, 19, 18, 0.16);
-  border-radius: var(--radius);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
-  animation: riseIn 760ms 120ms ease both;
-}
-
-.ticker strong,
-.ticker span {
-  display: block;
-}
-
-.ticker strong {
-  font-size: 0.82rem;
-  text-transform: uppercase;
-}
-
-.ticker span {
-  margin-top: 0.2rem;
-  color: var(--muted);
-  font-size: 0.92rem;
 }
 
 .section {
@@ -749,6 +724,15 @@ select {
 
   .hero-visual {
     min-height: 360px;
+  }
+
+  .mark-orbit {
+    width: min(94%, 360px);
+    transform: translateY(26px);
+  }
+
+  .waveform {
+    bottom: 0;
   }
 
   .feature-line {
