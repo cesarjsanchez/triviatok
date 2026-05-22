@@ -1,147 +1,195 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script defer src="https://unpkg.com/@tinybirdco/flock.js" data-host="https://api.us-east.tinybird.co" data-token="p.eyJ1IjogImU0Mzk4MGJlLTZhYzgtNDdjNy1iNjVlLTE0MzI3NTEzOGRmMiIsICJpZCI6ICJmM2MxNWJkNy0zZjhmLTQyMDAtOTExOS03M2Y4M2VkYzA0ZDAiLCAiaG9zdCI6ICJ1c19lYXN0In0.8218NBHpyk588auK755g9_EPUnsEynKEXhY2CPRTihw"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
-    <title>Episodes List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trivia Tok Episodes | 20-Question Trivia Archive</title>
+  <meta name="description" content="Browse Trivia Tok episodes by topic, including general knowledge, history, 2000s pop culture, science and nature, and food and drink trivia.">
+  <meta name="author" content="Trivia Tok">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://triviatok.com/episodes.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Trivia Tok">
+  <meta property="og:title" content="Trivia Tok Episodes | 20-Question Trivia Archive">
+  <meta property="og:description" content="Browse quick no-fluff Trivia Tok episodes and review every question and answer.">
+  <meta property="og:url" content="https://triviatok.com/episodes.html">
+  <meta property="og:image" content="https://triviatok.com/assets/img/trivia-tok-mark.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trivia Tok Episodes">
+  <meta name="twitter:description" content="Fast 20-question trivia episodes by topic.">
+  <meta name="twitter:image" content="https://triviatok.com/assets/img/trivia-tok-mark.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Trivia Tok Episodes",
+    "url": "https://triviatok.com/episodes.html",
+    "numberOfItems": 6,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://triviatok.com/episodes/ep6-general-knowledge-trivia-multiverse.html",
+        "name": "General Knowledge: Trivia Multiverse"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "url": "https://triviatok.com/episodes/ep5-food-and-drink.html",
+        "name": "Food & Drink: Culinary Conundrums"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "url": "https://triviatok.com/episodes/ep4-science-and-nature.html",
+        "name": "Science & Nature: From Sonar Waves to Galactic Ways"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "url": "https://triviatok.com/episodes/ep3-2000s-Pop-Trivia.html",
+        "name": "2000s Pop Culture Trivia"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "url": "https://triviatok.com/episodes/ep2-General-History-Trivia.html",
+        "name": "General History Trivia"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "url": "https://triviatok.com/episodes/ep1-General-Knowledge.html",
+        "name": "General Knowledge Trivia"
+      }
+    ]
+  }
+  </script>
 </head>
-
 <body>
-    <div class="overlay" id="overlay" onclick="closeNav()"></div>
-
-    <section class="element-full">
-        <section class="head-bar">
-            <div class="container">
-                <div class="row">
-                  <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6">
-                    <a href="index.html"><img class="img-responsive" src="assets/img/trivia-tok-logo-new.png"></a>
-                  </div>
-                  <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 text-right">
-                      <div id="mySidenav" class="sidenav text-center">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
-                        <a href="index.html">Home</a><hr>
-                        <a href="episodes.html">Episodes</a>        
-                    </div>
-                      <div class="main" id="main">
-                        <a href="#" onclick="openNav()">MENU &#9776;</a>
-                      </div>
-                  </div>
-                </div>
-                <hr>
-            </div>
-        </section>
-        <section class="element-page">
-            <div class="container">
-                <h2 class="text-center">Trivia Tok Episode List</h2>
-  
-
-                <!-- The Episode Listing Section -->
-                <a href="episodes\ep1-General-Knowledge.html" class="Element-link">
-                <section class="Element-heading">
-                    <h3>Episode 1: Unleash Your Inner Genius with General Knowledge</h3>
-                    <p class="Element-heading-para font-2">
-                        Put your trivia skills to the test in this exhilarating episode of Trivia Tok! Join your host, AI-Jandro, as he guides you through 20 mind-bending general knowledge questions that will challenge your intellect and expand your horizons. From geography and history to science and literature, this episode covers a diverse array of subjects, ensuring there's something for everyone.
-                    </p>
-                </section>
-                </a>
-                <a href="episodes\ep2-General-History-Trivia.html" class="Element-link">
-                <section class="Element-heading">
-                    <h3>Episode 2: Dive into the Past with General History Trivia</h3>
-                    <p class="Element-heading-para font-2">
-                        Test your trivia prowess in this electrifying episode of Trivia Tok! Your host, AI-Jandro, presents 20 fascinating questions spanning the breadth and depth of general history. From ancient civilizations to modern milestones, we touch on key events and significant figures that shaped our world. This episode is sure to challenge your knowledge, pique your curiosity, and take you on a thrilling ride through the annals of history.
-                    </p>
-                </section>
-              </a>
-                <a href="episodes\ep3-2000s-Pop-Trivia.html" class="Element-link">
-                <section class="Element-heading">
-                    <h3>Episode 3: 2000s Pop Culture Extravaganza</h3>
-                    <p class="Element-heading-para font-2">
-                        Get ready to dive into the whirlpool of nostalgia in this exhilarating episode of Trivia Tok! Your host, AI-Jandro, presents 20 captivating questions that cover the expanse of 2000s pop culture. From groundbreaking TV shows and tech gadgets to unforgettable films and iconic moments that defined the decade, we've got it all. 
-                    </p>
-                </section>
-            </a>
-            <a href="episodes\ep4-science-and-nature.html" class="Element-link">
-              <section class="Element-heading">
-                  <h3>Episode 4: Science & Nature - From Sonar Waves to Galactic Ways.</h3>
-                  <p class="Element-heading-para font-2">
-                    Get ready to explore the mysteries and wonders of our natural world in this enlightening episode of Trivia Tok!
-
-                    Your host, AI-Jandro, presents 20 fascinating questions spanning the realms of biology, chemistry, astronomy, and more. From the secrets of the animal kingdom and marvels of the plant world to groundbreaking scientific discoveries and phenomena that define our planet, we’ve got it all. This episode is designed to challenge your understanding, spark your interest, and deepen your appreciation for the incredible world of Science & Nature. Join us for under 5 minutes of pure scientific wonder, and find out if you're the true Trivia Tok Science & Nature Maestro!
-                  </p>
-              </section>
-          </a>
-          <a href="episodes\ep5-food-and-drink.html" class="Element-link">
-            <section class="Element-heading">
-                <h3>Episode 5: Food & Drink - Culinary Conundrums.</h3>
-                <p class="Element-heading-para font-2">
-                  Get ready to tantalize your taste buds and delve into the diverse world of flavors in this delicious episode of Trivia Tok! 
-                  Your host, AI-handro, dishes out 20 scrumptious questions that span the gamut of Food & Drink. 
-                  From ancient culinary traditions and iconic beverages to international delicacies and gastronomic wonders, we've cooked up a feast of trivia for you. 
-                  This episode is set to challenge your foodie knowledge, whet your appetite for learning, and transport you on a global culinary journey. 
-                  Join us for under 5 minutes of delectable delights, and find out if you're the true Trivia Tok Gastronomic Maestro!
-
-                </p>
-            </section>
-        </a>
-        <a href="episodes\ep6-general-knowledge-trivia-multiverse.html" class="Element-link">
-          <section class="Element-heading">
-              <h3>Episode 6: General Knowledge - Trivia Multiverse</h3>
-              <p class="Element-heading-para font-2">
-                Prepare to traverse through trivia realms and dive into a universe of knowledge with this invigorating episode of Trivia Tok! 
-                Your guide, AI-handro, will navigate you through 20 scintillating questions sprawling across history, science, and pop culture in our "General Knowledge" adventure, titled "Curious Queries: A Multiverse of Trivia!" 
-                Will you emerge as the ultimate trivia titan, master of various domains of wisdom? 
-                This episode, set to whisk you through an explorative journey of assorted questions, aims to ignite your curiosity, challenge your intellect, and transport you through a multidimensional trivia experience. 
-                Spend under 5 minutes with us, and let's explore if you're the true Trivia Tok Multiversal Maverick!
-
-              </p>
-          </section>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Trivia Tok home">
+        <img src="assets/img/trivia-tok-mark.png" alt="" width="42" height="42">
+        <span>Trivia Tok</span>
       </a>
-                <!-- ... you can continue adding more episodes in the same manner -->
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" data-site-nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="episodes.html" aria-current="page">Episodes</a>
+        <a href="https://open.spotify.com/show/3PAqIZxXECZvc9KHS8ooDF" target="_blank" rel="noopener">Spotify</a>
+      </nav>
+    </div>
+  </header>
 
-                <!-- The rest of your page contents can continue below, or you can remove if not needed -->
-                <!-- ... -->
-
-            </div>
-        </section>
-
-        <section class="footer">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                  <div class="footer-p1">
-                          <p class="font-2">Copy right 2023 by Trivia Tok</p>
-                  </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                  <img class="img-responsive foot-img" src="assets/img/trivia-tok-logo-new.png">
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                  <div class="footer-p2" >
-                    <section class="social">
-                      <ul>
-                        <li><a href="https://podcasters.spotify.com/pod/show/triviatok" class="fa fa-spotify fa-2x" aria-hidden="true"></a></li>    
-                      </ul>
-                    </section>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-      
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Episode archive</p>
+        <h1>Pick a quick quiz.</h1>
+        <p class="lede">Every Trivia Tok episode gives you 20 medium-hard questions in a fast AI-hosted format. Browse by topic, listen on Spotify, or review the answers on the static episode pages.</p>
+        <div class="archive-note" aria-label="Archive details">
+          <span>6 episodes live</span>
+          <span>120 questions indexed</span>
+          <span>Spotify links included</span>
+        </div>
+      </div>
     </section>
 
-</body>
+    <section class="section">
+      <div class="wrap">
+        <div class="episode-list reveal">
+          <a class="episode-row" href="episodes/ep6-general-knowledge-trivia-multiverse.html">
+            <span class="episode-no">EP 06</span>
+            <span>
+              <h3>General Knowledge: Trivia Multiverse</h3>
+              <p>Mixed trivia spanning the Paris stock exchange, bingo, astronomy, film, geography, anatomy, and zodiac signs.</p>
+            </span>
+            <span class="episode-action">Open episode</span>
+          </a>
+          <a class="episode-row" href="episodes/ep5-food-and-drink.html">
+            <span class="episode-no">EP 05</span>
+            <span>
+              <h3>Food & Drink: Culinary Conundrums</h3>
+              <p>A food trivia round covering beverages, pub names, chocolate history, spices, restaurant terms, and global dishes.</p>
+            </span>
+            <span class="episode-action">Open episode</span>
+          </a>
+          <a class="episode-row" href="episodes/ep4-science-and-nature.html">
+            <span class="episode-no">EP 04</span>
+            <span>
+              <h3>Science & Nature: From Sonar Waves to Galactic Ways</h3>
+              <p>Questions about sound, animals, chemistry, geology, the Milky Way, DNA, and the natural world.</p>
+            </span>
+            <span class="episode-action">Open episode</span>
+          </a>
+          <a class="episode-row" href="episodes/ep3-2000s-Pop-Trivia.html">
+            <span class="episode-no">EP 03</span>
+            <span>
+              <h3>2000s Pop Culture Trivia</h3>
+              <p>Harry Potter, Avatar, Facebook, American Idol, Twilight, Wii, Amy Winehouse, and other 2000s pop culture moments.</p>
+            </span>
+            <span class="episode-action">Open episode</span>
+          </a>
+          <a class="episode-row" href="episodes/ep2-General-History-Trivia.html">
+            <span class="episode-no">EP 02</span>
+            <span>
+              <h3>General History Trivia</h3>
+              <p>A compact history round covering Columbus, the Cold War, Rome, vaccines, presidents, explorers, and world events.</p>
+            </span>
+            <span class="episode-action">Open episode</span>
+          </a>
+          <a class="episode-row" href="episodes/ep1-General-Knowledge.html">
+            <span class="episode-no">EP 01</span>
+            <span>
+              <h3>General Knowledge Trivia</h3>
+              <p>The original Trivia Tok set: geography, art, science, literature, chemistry, Nobel prizes, and classic facts.</p>
+            </span>
+            <span class="episode-action">Open episode</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
+    <section class="section alt">
+      <div class="wrap split reveal">
+        <div>
+          <h2>Static pages, searchable answers.</h2>
+          <p>The archive keeps every question in HTML so search engines can understand the topics and listeners can review a full episode without loading an app.</p>
+        </div>
+        <div class="process">
+          <div>
+            <span>SEO</span>
+            <p><strong>Topic-rich titles.</strong> Each episode page now targets the subject people actually search for.</p>
+          </div>
+          <div>
+            <span>UX</span>
+            <p><strong>One clear action.</strong> Open the episode, listen on Spotify, or jump back to the archive.</p>
+          </div>
+          <div>
+            <span>FAST</span>
+            <p><strong>No heavy framework load.</strong> The archive is static HTML, local CSS, and one tiny script for navigation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/trivia-tok-mark.png" alt="" width="34" height="34">
+        <span>Trivia Tok</span>
+      </div>
+      <span>Copyright 2026 Trivia Tok</span>
+      <a href="https://open.spotify.com/show/3PAqIZxXECZvc9KHS8ooDF" target="_blank" rel="noopener">Listen on Spotify</a>
+    </div>
+  </footer>
+  <script src="assets/js/script.js" defer></script>
+</body>
 </html>

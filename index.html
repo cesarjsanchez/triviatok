@@ -1,111 +1,209 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script defer src="https://unpkg.com/@tinybirdco/flock.js" data-host="https://api.us-east.tinybird.co" data-token="p.eyJ1IjogImU0Mzk4MGJlLTZhYzgtNDdjNy1iNjVlLTE0MzI3NTEzOGRmMiIsICJpZCI6ICJmM2MxNWJkNy0zZjhmLTQyMDAtOTExOS03M2Y4M2VkYzA0ZDAiLCAiaG9zdCI6ICJ1c19lYXN0In0.8218NBHpyk588auK755g9_EPUnsEynKEXhY2CPRTihw"></script>
-    <script type="text/javascript" src="assets/js/script.js" ></script>
-    <title>TrviaTok</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trivia Tok | Quick No-Fluff Trivia Podcast</title>
+  <meta name="description" content="Trivia Tok is a fast AI-hosted trivia podcast with 20-question episodes in under 5 minutes. Listen to general knowledge, history, science, food, and pop culture trivia.">
+  <meta name="author" content="Trivia Tok">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://triviatok.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Trivia Tok">
+  <meta property="og:title" content="Trivia Tok | Quick No-Fluff Trivia Podcast">
+  <meta property="og:description" content="Fast 20-question trivia episodes hosted by AI-Jandro. No filler, just quick trivia for commutes, workouts, and quiz breaks.">
+  <meta property="og:url" content="https://triviatok.com/">
+  <meta property="og:image" content="https://triviatok.com/assets/img/trivia-tok-mark.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trivia Tok | Quick No-Fluff Trivia Podcast">
+  <meta name="twitter:description" content="Fast 20-question trivia episodes hosted by AI-Jandro.">
+  <meta name="twitter:image" content="https://triviatok.com/assets/img/trivia-tok-mark.png">
+  <link rel="preload" as="image" href="assets/img/trivia-tok-mark.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PodcastSeries",
+    "name": "Trivia Tok",
+    "url": "https://triviatok.com/",
+    "image": "https://triviatok.com/assets/img/trivia-tok-mark.png",
+    "description": "Trivia Tok is a quick no-fluff trivia podcast hosted by AI-Jandro, with 20-question episodes designed to finish in under 5 minutes.",
+    "genre": ["Trivia", "Education", "Games"],
+    "inLanguage": "en",
+    "dateModified": "2026-05-22",
+    "sameAs": [
+      "https://open.spotify.com/show/3PAqIZxXECZvc9KHS8ooDF",
+      "https://podcasters.spotify.com/pod/show/triviatok"
+    ]
+  }
+  </script>
 </head>
 <body>
-<!-- div used to make the body blur -->
-    <div class="overlay" id="overlay" onclick="closeNav()"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Trivia Tok home">
+        <img src="assets/img/trivia-tok-mark.png" alt="" width="42" height="42">
+        <span>Trivia Tok</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" data-site-nav aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="episodes.html">Episodes</a>
+        <a href="https://open.spotify.com/show/3PAqIZxXECZvc9KHS8ooDF" target="_blank" rel="noopener">Spotify</a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="head index-part-1">
-        <div class="head-bar">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6">
-                    <a href="index.html"><img class="img-responsive" src="assets/img/trivia-tok-logo-new.png"></a>
-                </div>
-                <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 text-right">
-                    <div id="mySidenav" class="sidenav text-center">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
-                        <a href="index.html">Home</a><hr>
-                        <a href="episodes.html">Episodes</a>              
-                    </div>
-                    <div class="main" id="main">
-                      <a href="#" onclick="openNav()">MENU &#9776;</a>
-                    </div>
-                </div>
-              </div>
-              <hr>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">AI-hosted trivia podcast</p>
+          <h1>Trivia Tok</h1>
+          <p class="lede">Quick no-fluff trivia episodes for people who want a sharp challenge without a long intro. Twenty questions, fast pacing, and an ElevenLabs voice hosted by AI-Jandro.</p>
+          <div class="hero-actions">
+            <a class="button" href="https://open.spotify.com/show/3PAqIZxXECZvc9KHS8ooDF" target="_blank" rel="noopener">Listen on Spotify</a>
+            <a class="button secondary" href="episodes.html">Browse episodes</a>
           </div>
-          </div>
-          <div class="wow">
-          <div class="container">
-            <div class="row">
-               <div class="wow-logo">
-                  <img class="img-responsive img-logo" src="assets/img/Trivia-TokLogo (2).png">
-               </div> 
-               <div class="font-1 helmet text-center">
-                 <p>Trivia Tok: Quick No-Fluff Trivia</p>
-               </div>
-               <div class="wow-btn text-center">
-                     <a class="btn btn-default wow-button" href="episodes.html">Epidsode List</a>
-               </div>
-            </div>
+          <div class="hero-proof" aria-label="Podcast format">
+            <span>20 questions</span>
+            <span>Under 5 minutes</span>
+            <span>No filler</span>
           </div>
         </div>
-    </section>
- 
-    <section class="index-part-2">
-         <div class="container">
-
-            <div class="row">
-               <div class="text-center">
-                 <h2>Just Trivia</h2>
-               </div>
-               <hr class="hr-mid">
-               <div class="sub-text text-center">
-                     <p class="font-1">
-                      Welcome to Trivia Tok, the ultimate podcast for trivia enthusiasts and knowledge seekers! 
-                      Hosted by AI-Jandro, each episode takes you on an exciting journey through a wide range of topics, with 20 medium-hard difficulty questions to test your knowledge and stimulate your mind. 
-                      In under 5 minutes, TriviaTok offers the perfect blend of entertainment and learning, making it the ideal companion for your morning commute, workout, or coffee break.
-                      <br>
-                      <br>
-                      Whether you're a seasoned quizmaster or simply curious, Trivia Tok will challenge and inspire you to expand your horizons and unleash your inner genius. 
-                     </p>
-               </div>
-           </div>
-
-          
-    </section>
-                
-    <section class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-            <div class="footer-p1">
-                    <p class="font-2">Copy right 2023 by Trivia Tok</p>
-            </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="ticker">
+            <strong>Now playing</strong>
+            <span>General knowledge in a clean five-minute run.</span>
           </div>
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-            <img class="img-responsive foot-img" src="assets/img/trivia-tok-logo-new.png">
+          <div class="mark-orbit">
+            <img src="assets/img/trivia-tok-mark.png" alt="" width="700" height="700" fetchpriority="high">
           </div>
-          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-            <div class="footer-p2" >
-              <section class="social">
-                <ul>
-                  <li><a href="https://podcasters.spotify.com/pod/show/triviatok" class="fa fa-spotify fa-2x" aria-hidden="true"></a></li>    
-                </ul>
-              </section>
-            </div>
+          <div class="waveform">
+            <span style="--h: 36px; --d: 0ms"></span>
+            <span style="--h: 74px; --d: 80ms"></span>
+            <span style="--h: 52px; --d: 160ms"></span>
+            <span style="--h: 94px; --d: 240ms"></span>
+            <span style="--h: 62px; --d: 320ms"></span>
+            <span style="--h: 108px; --d: 400ms"></span>
+            <span style="--h: 78px; --d: 480ms"></span>
+            <span style="--h: 44px; --d: 560ms"></span>
+            <span style="--h: 86px; --d: 640ms"></span>
+            <span style="--h: 58px; --d: 720ms"></span>
           </div>
         </div>
       </div>
     </section>
- 
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <h2>Trivia that gets to the question.</h2>
+          <p>Each episode is built for quick listening: one topic, twenty medium-hard prompts, and answers delivered without the podcast padding.</p>
+        </div>
+        <div class="feature-line reveal">
+          <div>
+            <strong>5 min</strong>
+            <p>Short enough for a coffee break, commute segment, or warm-up round.</p>
+          </div>
+          <div>
+            <strong>20 Qs</strong>
+            <p>Enough volume to feel like a real challenge without turning into a lecture.</p>
+          </div>
+          <div>
+            <strong>AI voice</strong>
+            <p>AI-Jandro keeps the show consistent and ready for automated episode production.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="episodes">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <h2>Start with the archive.</h2>
+          <p>Pick a topic and play through the questions. Each page includes the episode link plus the full question-and-answer list for search and review.</p>
+        </div>
+        <div class="episode-list reveal">
+          <a class="episode-row" href="episodes/ep6-general-knowledge-trivia-multiverse.html">
+            <span class="episode-no">EP 06</span>
+            <span>
+              <h3>General Knowledge: Trivia Multiverse</h3>
+              <p>A fast mixed-topic run through history, science, film, geography, and everyday facts.</p>
+            </span>
+            <span class="episode-action">Review questions</span>
+          </a>
+          <a class="episode-row" href="episodes/ep5-food-and-drink.html">
+            <span class="episode-no">EP 05</span>
+            <span>
+              <h3>Food & Drink: Culinary Conundrums</h3>
+              <p>Global flavors, drinks, restaurant terms, spices, and food history in one compact quiz.</p>
+            </span>
+            <span class="episode-action">Review questions</span>
+          </a>
+          <a class="episode-row" href="episodes/ep4-science-and-nature.html">
+            <span class="episode-no">EP 04</span>
+            <span>
+              <h3>Science & Nature: From Sonar Waves to Galactic Ways</h3>
+              <p>Biology, chemistry, astronomy, animals, and natural-world facts for curious listeners.</p>
+            </span>
+            <span class="episode-action">Review questions</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split reveal">
+        <div>
+          <h2>Built for repeat plays.</h2>
+          <p>Trivia Tok works as a daily brain warm-up, a quick game with friends, or a practice loop for anyone building broader general knowledge.</p>
+          <p>The static site now mirrors that format: fast pages, crawlable episode text, and direct routes to every question set.</p>
+        </div>
+        <div class="process">
+          <div>
+            <span>01</span>
+            <p><strong>Choose a category.</strong> General knowledge, history, science, food, and pop culture are already live.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <p><strong>Play the episode.</strong> Open Spotify and answer along before AI-Jandro reveals each answer.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <p><strong>Review the set.</strong> Episode pages keep every question and answer available for search and sharing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Ready for a quick round?</p>
+        <h1>Listen, answer, move on.</h1>
+        <p class="lede">Trivia Tok keeps the show simple: quick questions, clear answers, and enough pace to make five minutes feel useful.</p>
+        <div class="hero-actions">
+          <a class="button" href="episodes.html">See all episodes</a>
+          <a class="button secondary" href="https://open.spotify.com/show/3PAqIZxXECZvc9KHS8ooDF" target="_blank" rel="noopener">Open Spotify</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/trivia-tok-mark.png" alt="" width="34" height="34">
+        <span>Trivia Tok</span>
+      </div>
+      <span>Copyright 2026 Trivia Tok</span>
+      <a href="https://open.spotify.com/show/3PAqIZxXECZvc9KHS8ooDF" target="_blank" rel="noopener">Listen on Spotify</a>
+    </div>
+  </footer>
+  <script src="assets/js/script.js" defer></script>
 </body>
 </html>
-
-
